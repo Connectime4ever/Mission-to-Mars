@@ -23,8 +23,8 @@ def scrape():
     mars.update_one({}, {"$set":mars_data}, upsert=True)
     return redirect('/', code=302)
 
-# Update the database using .update_one()
-.update_one(query_parameter, {"$set": data}, options)
+# # Update the database using .update_one()
+# .update_one(query_parameter, {"$set": data}, options)
 
 if __name__ == "__main__":
     app.run()
